@@ -34,6 +34,6 @@ def main():
     print("\nРазмеры файлов:")
     for file_path, size in file_sizes.items():
         print(f"{file_path}: {format_size(size)}")
-
+#
 if __name__ == "__main__":
     main()
