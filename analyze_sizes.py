@@ -5,6 +5,7 @@ def get_directory_size(path='.'):
     file_sizes = {}
 
     # Проход по всем файлам и папкам в указанной директории
+
     for dirpath, dirnames, filenames in os.walk(path):
         for filename in filenames:
             file_path = os.path.join(dirpath, filename)
@@ -19,6 +20,7 @@ def get_directory_size(path='.'):
 
 def format_size(size):
     # Форматирование размера в удобочитаемый вид
+
     for unit in ['Б', 'КБ', 'МБ', 'ГБ']:
         if size < 1024:
             return f"{size:.2f} {unit}"
