@@ -1,5 +1,5 @@
 import os
-
+ #code system
 def get_directory_size(path='.'):
     total_size = 0
     file_sizes = {}
@@ -34,6 +34,6 @@ def main():
     print("\nРазмеры файлов:")
     for file_path, size in file_sizes.items():
         print(f"{file_path}: {format_size(size)}")
-
+#
 if __name__ == "__main__":
     main()
