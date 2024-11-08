@@ -1,5 +1,5 @@
 import os
-
+ #code system
 def get_directory_size(path='.'):
     total_size = 0
     file_sizes = {}
